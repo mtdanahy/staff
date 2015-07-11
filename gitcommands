@@ -1,0 +1,236 @@
+ 1083  git config --global mike.danahy "Mike Danahy"
+ 1084  git config --global user.name  "Mike Danahy"
+ 1085  git config --global user.email mdanahy@esucc.org
+ 1088  mkdir git
+ 1089  cd git
+ 1090  git init
+ 1092  more .git
+ 1093  cd .git
+ 1096  git add .
+ 1097  git commit -m "First Try"
+ 1098  git remote add origin git@codebasehq.com:educational-service-unit-coordinating-council/learning-php/oop_starting.git
+ 1099  git push -u origin master
+ 1100  git all .
+ 1101  git git commit -m "initial commit"
+ 1102  git remote add origin git@codebasehq.com:educational-service-unit-coordinating-council/learning-php/oop_starting.git
+ 1103  git push -u origin master
+ 1104  git remote add origin :educational-service-unit-coordinating-council/learning-php/oop_starting.git'
+ 1105  git remote add origin :educational-service-unit-coordinating-council/learning-php/oop_starting.git
+ 1106  git push -u origin master
+ 1110  add-apt-repository ppa:git-core/ppa
+ 1112  apt-get install git
+ 1113  git version
+ 1124  git config --global user.name "Mike Danahy"
+ 1125  git config --global user.email "mdanahy@esucc.org"
+ 1130  cd git
+ 1133  chown -R mdanahy:mdanahy git
+ 1135  git init
+ 1136  cd .git
+ 1140  git remote add origin https://mdanahy@bitbucket.org/mdanahy/bb101.git
+ 1142  git add contributors.txt 
+ 1143  git commit -m 'Inital commit with contributors'
+ 1146  git commit -m 'Initial commit with Contributors'
+ 1147  git push -u origin master
+ 1150  cd .git
+ 1163  cd git
+ 1166  git clone https://mdanahy@bitbucket.org/mdanahy/bb101.git
+ 1174  git clone https://mdanahy@bitbucket.org/mdanahy/bb101.git
+ 1182  cd .git
+ 1201  git clone https://mdanahy@bitbucket.org/mdanahy/bb101repo.git bb101repo-practice
+ 1203  git clone https://mdanahy@bitbucket.org/mdanahy/bb101.git bb101repo-practice
+ 1208  cd .git
+ 1215  git add
+ 1216  git add contrib.txt 
+ 1217  git commit
+ 1220  git add contrib.txt
+ 1221  git commit
+ 1222  git commet -m "Test commit"
+ 1223  git commit -m "Test commit"
+ 1224  git commit  -a
+ 1225  git push
+ 1230  git status
+ 1233  cd git
+ 1236  cd .git
+ 1247  git status
+ 1248  git add contributors.txt
+ 1249  git commit -m 'Initial commit with contributors'
+ 1250  git push
+ 1598  locate .git
+ 1611  git clone --bare staff_search staff_search.git
+ 1612  git clone --bare staffsearch staffsearch.git
+ 1613  git init
+ 1615  cd .git
+ 1619  git add *
+ 1622  cd .git
+ 1629  git status
+ 1630  echo "This is a test of the git status" > filetest
+ 1631  git status
+ 1633  git status
+ 1634  git add filetest
+ 1635  git status
+ 1637  git status
+ 1638  git add t.ph3
+ 1639  git add t.php3
+ 1640  git status
+ 1642  git status
+ 1643  git checkout t.php3
+ 1644  git status
+ 1646  git status
+ 1647  git add t.php3
+ 1648  git status
+ 1649  git status -s
+ 1650  more .gitignore
+ 1652  git status
+ 1653  git diff
+ 1654  git add t.php3
+ 1655  git diff
+ 1656  git status
+ 1657  git commit
+ 1659  git commit
+ 1660  git log
+ 1661  git remote add origin https://github.com/mtdanahy/staffsearch.git
+ 1663  git config --global user.email "mtdanahy@gmail.com"
+ 1666  cd .git
+ 1671  git clone https://github.com/mtdanahy/staffsearch.git
+ 1672  git clone https://github.com/mtdanahy/staffs.git
+ 1673  git clone https://github.com/mtdanahy/staffsearch.git
+ 1675  git status
+ 1678  git add t.php3 
+ 1679  git commit -m " This is the first change'
+ 1680  git commit -m " This is the first change"
+ 1681  git status
+ 1688  git add staffsearch
+ 1689  git status
+ 1694  git commit -m "this is the second one"
+ 1695  history |grep git
+ 1696  git clone https://github.com/mtdanahy/staffsearch.git
+ 1697  git remote add origin https://github.com/mtdanahy/staffsearch.git
+ 1698  git log
+ 1699  git remote add origin https://github.com/mtdanahy/staffsearch.git
+ 1700  git push -u origin master
+ 1701  git pull -u origin master
+ 1704  git -status
+ 1705  git --status
+ 1706  history |grep git
+ 1707  git status
+ 1708  git add README.md 
+ 1709  git stafus
+ 1710  git status
+ 1712  git commit -m "Try to work 2"
+ 1714  git push -u origin master
+ 1717  git stafus
+ 1718  git status
+ 1720  git del staff.tar
+ 1721  git help
+ 1722  git commit "This is a erase of the staff tar file"
+ 1723  git commit -m "This is a erase of the staff tar file"
+ 1724  git add staff.tar
+ 1725  git status
+ 1726  git commit -m "This is a erase of the staff tar file"
+ 1727  git push -u origin master
+ 1746  git add filetest 
+ 1747  git commit "We just want to see about adding files"
+ 1748  git commit -m "We just want to see about adding files"
+ 1749  git add testfile.txt 
+ 1750  git commit -m "We just want to see about adding files"
+ 1754  history |grep git
+ 1755  git -u origin master
+ 1756  history |grep git
+ 1757  history |grep git |more
+ 1758  history |grep git |grep mtdanahy
+ 1759  git remote add origin https://github.com/mtdanahy/staffsearch.git
+ 1760  git status
+ 1762  git push -u origin master
+ 1765  git add filetest
+ 1766  git status
+ 1767  git committ -m " This is the 3rd time we have uploaded this"
+ 1768  git commit -m " This is the 3rd time we have uploaded this"
+ 1769  git push -u origin master
+ 1770  git push
+ 1771  git pull origin master
+ 1780  git branch blue
+ 1787  git branch blue
+ 1789  cd .git
+ 1796  git status
+ 1797  git add .
+ 1798  git status
+ 1799  git log
+ 1800  git checkout -b blue
+ 1801  git checkout -b red
+ 1803  git status
+ 1804  git branch
+ 1805  git checkout master
+ 1806  git checkout blue
+ 1808  cd .git
+ 1816  git checkout blue
+ 1821  git add staff.html 
+ 1823  git status
+ 1824  git add staff.html
+ 1825  git commit -m This is the added blue one'
+ 1826  git commit -m 'This is the added blue one'
+ 1827  git status
+ 1828  git branch
+ 1829  git status
+ 1832  git branch
+ 1833  git branch master
+ 1834  git checkout master
+ 1838  git status
+ 1839  git add staff.html
+ 1840  git commit -m 'This was done to get rid of hte ^m character'
+ 1841  git checkout red
+ 1844  git add staff.html 
+ 1845  git -m commit 'This was added to the red with a change on Staff keyword'
+ 1846  git status
+ 1847  git commit -m 'This was added to the red with a change on Staff keyword'
+ 1849  git status
+ 1850  git add staff.html
+ 1851  git commit -m 'More additions to red'
+ 1853  git push -u origin red
+ 1854  git checkout email
+ 1855  git checkout -b email
+ 1856  git branch
+ 1857  git checkout master
+ 1858  git branch
+ 1859  git checkout -b red
+ 1863  git checkout red
+ 1870  git push -u origin red
+ 1872  git checkout red
+ 1874  git commit -a -m "another test"
+ 1876  git branch
+ 1880  git checkout -b blue
+ 1881  git checkout blue
+ 1883  git commit -a -m "This is the blue one"
+ 1885  git push -u origin blue
+ 1886  git blue
+ 1889  git commit -a -m 'Let see again'
+ 1892  git commit -a -m 'Let see email'
+ 1894  git commit -a -m 'Let see email'
+ 1895  git push -u origin blue
+ 1896  cd .git
+ 1925  git branches
+ 1926  git branch
+ 1927  cd .git
+ 1930  git branch
+ 1931  git checkout red
+ 1934  git branch
+ 1935  git checkout red
+ 1938  git checkout blue
+ 1941  git commit -p
+ 1949  git config --global user.name "Mike Danahy"
+ 1950  git config --global user.email "mdanahy@esucc.org"
+ 1951  git init project1
+ 1958  git add file1.txt
+ 1959  git create file1.txt
+ 1961  cd .git
+ 1966  git add file1.txt
+ 1967  git commit -=m "My first commit"
+ 1968  git commit -m "My first commit"
+ 1978  cd /etc/gitconfig
+ 1980  cd /etc/gitconfig
+ 1982  cd .git
+ 1985  cd .git
+ 1987  git config
+ 2008  git lol --all
+ 2014  git branch
+ 2015  history |grep git
+ 2016  history |grep git > gitcommands
