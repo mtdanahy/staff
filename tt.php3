@@ -13,56 +13,7 @@
 
 <?php
 
- function printoutall($ar,$num)
-  {
-printf("<h1><center><a href = mailto:");
-# echo "$num <br>";
-for ($i=0; $i < $num+1; $i++)
-  {
-   if ($ar[$i] != "")
-   {
-        if($i != $num)
-          {
-           printf("%s,",$ar[$i]);
-          }
-       if($i == $num)
-        {
-          printf("%s",$ar[$i]);
-        }
-  }
-}
-printf(">Mail all of the above!</a></h1></center>");
-printf ("<P><center><H1>");
- 
-  }
 
-function printoutall2($ar,$num)
-  {
-printf("Or Cut and Paste all:/n");
-# echo "$num <br>";
-for ($i=0; $i < $num+1; $i++)
-  {
-   if($i % 8 == 0)
-      {
-        printf("<br>");
-     }
-
-   if ($ar[$i] != "")
-   {
-        if($i != $num)
-          {
-           printf("%s,",$ar[$i]);
-          }
-       if($i == $num)
-        {
-          printf("%s",$ar[$i]);
-        }
-  }
-}
-printf(">Mail all of the above!</a></h1></center>");
-printf ("<P><center><H1>");
-
-  }
 
 if (!empty($_POST['submit'])) 
 {
@@ -144,14 +95,14 @@ echo "<p> Number of Records found: ".$num_results."</p>";
 for ($i=0; $i <$num_results+1; $i++)
  {
   $myrow=$result->fetch_assoc();
-  if ($myrow["Mail"] != "") {$email="@esu2.org";}
+  if ($myrow["Mail"] != "") 
    $all=$myrow["Mail"] . "@esu2.org,";
+
+ 
    $email=$myrow["Mail"];
-   $printemail[$i]=$email;
-
-printf("<tr><td>%s %s</td><td>%s</td><td>%s</td><td><a href = mailto:%s>$email</a></td></tr>",ucwords(strtolower($myrow["Fn"])),ucwords(strtolower($myrow["Ln"])),$myrow["Institution"],ucwords(strtolower($myrow["Pos"])),$myrow["Mail"]);
-
- # printf("<tr><td>%s %s</td><td>%s</td><td>%s</td><td><a href = mailto:%s>$email</a></td></tr>",$myrow["Fn"],$myrow["Ln"],$myrow["Institution"],$myrow["Pos"],$myrow["Mail"]);
+  if($myrow["Mail"] == "") $email="NONE";
+  $printemail[$i]=$email;
+ printf("<tr><td>%s %s</td><td>%s</td><td>%s</td><td><a href = mailto:%s>$email</a></td></tr>",$myrow["Fn"],$myrow["Ln"],$myrow["Institution"],$myrow["Pos"],$myrow["Mail"]);
 
     }
 
@@ -159,8 +110,27 @@ printf("<tr><td>%s %s</td><td>%s</td><td>%s</td><td><a href = mailto:%s>$email</
 printf("<br><br>");
 printf("<b><h1><size=2><Center>Cut and Paste emails to your e-mail client</h1></Center></b>");
 
-printoutall($printemail,$num_results);
-printoutall2($printemail,$num_results);
+printf("<h1><center><a href = maiilto:");
+
+for ($i=0; $i < $num_results+1; $i++)
+  {
+   if ($printemail[$i] != "")
+   {
+ #   if($i % 8 == 0) 
+ #     {
+# 	printf("<br>");
+#     }
+        if($i != $num_results)
+          {
+           printf("%s,",$printemail[$i]);
+          }
+       if($i == $num_results)
+        {
+	  printf("%s",$printemail[$i]);
+        }
+  }
+}
+printf(">Mail all of the above!</a></h1></center>");
 printf ("<P><center><H1>"); 
 printf("<a href=\"http://zabbix2.esu2.org/staff.html\">Back To The Main Search Page</a>");
 } 
